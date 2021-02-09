@@ -1,0 +1,160 @@
+{
+	"applications": {
+		"wh": {
+			"name": "Warehousing",
+			"members": ["admins", "david", "developers"],
+			"roles": {
+				"admins": ["alice", "eve"],
+				"developers": ["grace"]
+			}
+		},
+		"inv": {
+			"name": "Invoicing",
+			"members": ["admins", "users", "developers"],
+			"roles": {
+				"users": ["charlie"],
+				"developers": ["grace"]
+			}
+		},
+		"office": {
+			"name": "Office",
+			"members": ["admins", "bob", "eve", "frank"],
+			"roles": {
+				"admins": ["alice"]
+			}
+		},
+		"security": {
+			"name": "System Security",
+			"members": ["users"],
+      "roles": {
+        "users": ["admins"]
+      }
+		},
+		"it": {
+			"name": "Internal IT Systems",
+			"members": ["admins", "users", "developers"],
+			"roles": {
+				"admins": ["david", "frank"],
+				"users": ["admins", "charlie", "eve"]
+			}
+		},
+		"website": {
+			"name": "Company website",
+			"members": ["publishers", "approvers", "users", "webdevelopers"],
+			"roles": {
+				"users": ["bob", "charlie", "david"],
+				"approvers": ["alice"],
+        "webdevelopers": ["contractors"]
+			}
+		},
+		"skunkwork": {
+			"name": "Special Projects",
+			"members": ["developers"],
+			"roles": {
+				"developers": ["alice","grace","heidi","pat"]
+			}
+		},
+		"legacy": {
+			"name": "Legacy Applications",
+			"members": ["ivan", "extsupport"]
+		}
+	},
+	"users": {
+		"alice": {
+			"name": "Alice Smith",
+			"email": "alice@example.com"
+		},
+		"bob": {
+			"email": "bob@example.com",
+			"name": "Bob Jones"
+		},
+    "charlie": {
+			"name": "Charlie Green",
+			"email": "charlie@example.com"
+		},
+    "david": {
+			"name": "David Bond",
+			"email": "dave@example.com"
+		},
+    "eve": {
+			"email": "eve@example.com",
+			"name": "Eve Pink"
+		},
+    "frank": {
+			"name": "Frank Sinatra",
+			"email": "frank@example.com"
+		},
+		"grace": {
+			"name": "Grace Jones",
+			"email": "grace@example.com"
+		},
+		"heidi": {
+			"name": "Heidi Hole",
+			"email": "heidi@example.com"
+		},
+		"ivan": {
+			"name": "Ivan Babbage"
+		},
+		"judy": {
+			"name": "Judy Finch",
+			"email": "judy@example.com"
+		},
+		"mallory": {
+			"name": "Mallory Finch",
+			"email": "mallory@example.com"
+		},
+		"niaj": {
+			"name": "Niaj Trimble",
+			"email": "niaj@example.com"
+		},
+		"oliver": {
+			"name": "Oliver Oil",
+			"email": "oliver@example.com"
+		},
+		"pat": {
+			"name": "Pat Patel",
+			"email": "pat@example.com"
+		},
+		"support": {
+			"email": "support@example.com"
+		}
+	},
+	"groups": [
+		{
+			"id": "admins",
+			"name": "Administrators"
+		},
+		{
+			"id": "users",
+			"name": "Users"
+		},
+		{
+			"id": "publishers",
+			"name": "Website Content Publishers"
+		},
+		{
+			"id": "approvers",
+			"name": "Website Content Approvers"
+		},
+		{
+			"id": "developers",
+			"name": "Software Developers"
+		},
+		{
+			"id": "webdevelopers",
+			"name": "Web Developers"
+		},
+		{
+			"id": "extsupport",
+			"name": "External Support"
+		}
+	],
+	"roles": {
+		"admins": ["alice", "bob"],
+		"publishers": ["frank", "eve"],
+		"developers": ["grace", "heidi"],
+		"extsupport": ["support", "subcontractors"],
+    "contractors": ["judy", "mallory", "subcontractors"],
+    "subcontractors": ["niaj", "oliver", "pat"]
+	}
+}
